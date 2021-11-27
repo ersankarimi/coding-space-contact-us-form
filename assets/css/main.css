@@ -1,0 +1,334 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html,
+body {
+  background-color: hotpink;
+  height: 100%;
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+  padding: 1em;
+  background-image: -webkit-gradient(linear, left top, right top, from(#63B0FF), to(#6D9CFF));
+  background-image: linear-gradient(to right, #63B0FF, #6D9CFF);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .overlay {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 3;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+}
+
+.container .overlay .thank-you-message {
+  position: absolute;
+  width: 378px;
+  height: 303px;
+  border-radius: 1em;
+  background-color: #fff;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
+
+.container .overlay .thank-you-message i {
+  font-size: 5em;
+  color: #5CB85C;
+  margin-bottom: .25em;
+  -webkit-animation: fadeIn 2s ease-out;
+          animation: fadeIn 2s ease-out;
+}
+
+.container .overlay .thank-you-message p {
+  font: 3rem 'Roboto', sans-serif;
+}
+
+.container .overlay .thank-you-message .small-p {
+  margin: 1em 0 0 0;
+  font: 1rem 'Roboto', sans-serif;
+}
+
+.container .overlay .thank-you-message img {
+  position: absolute;
+  width: 300px;
+  -webkit-animation: downToUp 1s ease-in-out infinite;
+          animation: downToUp 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes downToUp {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes downToUp {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.wrapper {
+  width: 416px;
+  height: 805px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.wrapper h1 {
+  margin: 1.5em;
+  font: 1.625rem 'Montserrat', sans-serif;
+}
+
+.wrapper p {
+  margin: 0 0 2em 0;
+  font: 1rem/1.5em 'Mulish', sans-serif;
+}
+
+.wrapper .input-group {
+  width: 366px;
+  position: relative;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: .8em;
+}
+
+.wrapper .input-group .hidden {
+  display: none;
+}
+
+.wrapper .input-group .icon {
+  position: absolute;
+  z-index: 2;
+  top: 25%;
+  right: 8%;
+}
+
+.wrapper .input-group .error-message {
+  font: .8rem 'Mulish', sans-serif;
+  text-align: left;
+  margin: .75em 0 0 0;
+}
+
+.wrapper .input-group input[type="text"],
+.wrapper .input-group textarea {
+  height: 52px;
+  padding: 1em;
+  font: 1rem 'Mulish', sans-serif;
+}
+
+.wrapper .input-group input[type="text"].input-error {
+  border: 1px solid #DC3545;
+}
+
+.wrapper .input-group input[type="text"].input-error:focus {
+  outline: none !important;
+  border: 1px solid #DC3545;
+}
+
+.wrapper .input-group textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.wrapper .input-group textarea.input-error {
+  border: 1px solid #DC3545;
+}
+
+.wrapper .input-group textarea.input-error.input-error:focus {
+  outline: none !important;
+  border: 1px solid #DC3545;
+}
+
+.wrapper button#submit {
+  background-image: -webkit-gradient(linear, left top, right top, from(#63B0FF), to(#6D9CFF));
+  background-image: linear-gradient(to right, #63B0FF, #6D9CFF);
+  width: 100%;
+  height: 52px;
+  padding: 1em;
+  font: 1rem 'Mulish', sans-serif;
+  border: transparent;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.wrapper button#submit:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#4F7EAB), to(#737DE2));
+  background-image: linear-gradient(to right, #4F7EAB, #737DE2);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 568px) {
+  .container .wrapper {
+    width: 300px;
+  }
+  .container .wrapper h1 {
+    font-size: 1.45rem;
+  }
+  .container .wrapper p {
+    font-size: .8;
+  }
+  .container .wrapper .input-group {
+    width: 250px;
+  }
+  .container .wrapper .input-group input[type="text"],
+  .container .wrapper .input-group textarea {
+    padding: .5em;
+    font-size: .8rem;
+  }
+  .container .wrapper button#submit {
+    font-size: .8rem;
+    height: 45px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container .wrapper {
+    width: 607px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Mulish&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="overlay hidden">
+            <div class="thank-you-message">
+                <i class="far fa-check-circle"></i>
+                <img src="assets/img/effect.png" alt="">
+                <p>Thank you!</p>
+                <p class="small-p">have filled out the form above</p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h1>Send me a message</h1>
+            <p>Feel free to get in touch with me with anything related to CODINGSPACE or you can just say hi. I will get
+                back to you as soon as I can.</p>
+
+
+
+            <form id="form">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Name" minlength="1">
+
+                    <img src="assets/img/check.svg" alt="Checklist icon" class="icon icon-success hidden">
+                    <img src="assets/img/error.svg" alt="Error Icon" class="icon icon-error hidden">
+
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="email" placeholder="Email address">
+
+                    <img src="assets/img/check.svg" alt="Checklist icon" class="icon icon-success hidden">
+                    <img src="assets/img/error.svg" alt="Error Icon" class="icon icon-error hidden">
+
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="subject" placeholder="Subject">
+
+                    <img src="assets/img/check.svg" alt="Checklist icon" class="icon icon-success hidden">
+                    <img src="assets/img/error.svg" alt="Error Icon" class="icon icon-error hidden">
+
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="input-group">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+                    <img src="assets/img/check.svg" alt="Checklist icon" class="icon icon-success hidden">
+                    <img src="assets/img/error.svg" alt="Error Icon" class="icon icon-error hidden">
+
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="input-group">
+                    <button type="submit" id="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
