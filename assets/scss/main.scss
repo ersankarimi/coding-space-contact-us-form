@@ -134,111 +134,108 @@ body {
 
         }
     }
-}
 
-.wrapper {
-    width: 416px;
-    height: 805px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    text-align: center;
-    border-radius: 10px;
-    padding: 1em;
-
-    h1 {
-        margin: 1.5em;
-        font: 1.625rem 'Montserrat', sans-serif;
-    }
-
-    p {
-        margin: 0 0 2em 0;
-        font: 1rem/1.5em 'Mulish', sans-serif;
-    }
-
-    // form styles
-    .input-group {
-        width: 366px;
-        position: relative;
-        text-align: left;
+    .wrapper {
+        width: 416px;
+        height: 805px;
         display: flex;
         flex-direction: column;
-        padding: .8em;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 10px;
+        padding: 1em;
 
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-
-        .hidden {
-            display: none;
+        h1 {
+            margin: 0 0.25em 1em 1em;
+            font: 1.625rem 'Montserrat', sans-serif;
         }
 
-        .icon {
-            position: absolute;
-            z-index: 2;
-            top: 25%;
-            right: 8%;
+        p {
+            margin: 0 0 2em 0;
+            font: 1rem/1.5em 'Mulish', sans-serif;
         }
 
-        .error-message {
-            font: .8rem 'Mulish', sans-serif;
+        // form styles
+        .input-group {
+            width: 366px;
+            position: relative;
             text-align: left;
-            margin: .75em 0 0 0;
+            display: flex;
+            flex-direction: column;
+            padding: .8em;
+
+            .hidden {
+                display: none;
+            }
+
+            .icon {
+                position: absolute;
+                z-index: 2;
+                top: 25%;
+                right: 8%;
+            }
+
+            .error-message {
+                font: .8rem 'Mulish', sans-serif;
+                text-align: left;
+                margin: .75em 0 0 0;
+            }
+
+            input[type="text"],
+            textarea {
+                height: 52px;
+                padding: 1em;
+                font: 1rem 'Mulish', sans-serif;
+            }
+
+            input[type="text"] {
+                &.input-error {
+                    border: 1px solid #DC3545;
+
+                    &:focus {
+                        outline: none !important;
+                        border: 1px solid #DC3545;
+                    }
+                }
+            }
+
+            textarea {
+                resize: vertical;
+                height: 100px;
+
+                &.input-error {
+                    border: 1px solid #DC3545;
+
+                    &.input-error:focus {
+                        outline: none !important;
+                        border: 1px solid #DC3545;
+                    }
+                }
+            }
         }
 
-        input[type="text"],
-        textarea {
+        button#submit {
+            background-image: linear-gradient(to right, #63B0FF, #6D9CFF);
+            width: 100%;
             height: 52px;
             padding: 1em;
             font: 1rem 'Mulish', sans-serif;
-        }
+            border: transparent;
+            color: #fff;
+            border-radius: 8px;
 
-        input[type="text"] {
-            &.input-error {
-                border: 1px solid #DC3545;
-
-                &:focus {
-                    outline: none !important;
-                    border: 1px solid #DC3545;
-                }
+            &:hover {
+                background-image: linear-gradient(to right, #4F7EAB, #737DE2);
+                cursor: pointer;
             }
         }
 
-        textarea {
-            // width: 366px;
-            resize: vertical;
-            height: 100px;
-
-            &.input-error {
-                border: 1px solid #DC3545;
-
-                &.input-error:focus {
-                    outline: none !important;
-                    border: 1px solid #DC3545;
-                }
-            }
-        }
     }
-
-    button#submit {
-        background-image: linear-gradient(to right, #63B0FF, #6D9CFF);
-        width: 100%;
-        height: 52px;
-        padding: 1em;
-        font: 1rem 'Mulish', sans-serif;
-        border: transparent;
-        color: #fff;
-        border-radius: 8px;
-
-        &:hover {
-            background-image: linear-gradient(to right, #4F7EAB, #737DE2);
-            cursor: pointer;
-        }
-    }
-
 }
+
+
 
 
 @media only screen and (max-width: 568px) {

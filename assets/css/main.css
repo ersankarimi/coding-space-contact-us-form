@@ -191,7 +191,7 @@ body {
   }
 }
 
-.wrapper {
+.container .wrapper {
   width: 416px;
   height: 805px;
   display: -webkit-box;
@@ -213,17 +213,17 @@ body {
   padding: 1em;
 }
 
-.wrapper h1 {
-  margin: 1.5em;
+.container .wrapper h1 {
+  margin: 0 0.25em 1em 1em;
   font: 1.625rem 'Montserrat', sans-serif;
 }
 
-.wrapper p {
+.container .wrapper p {
   margin: 0 0 2em 0;
   font: 1rem/1.5em 'Mulish', sans-serif;
 }
 
-.wrapper .input-group {
+.container .wrapper .input-group {
   width: 366px;
   position: relative;
   text-align: left;
@@ -237,54 +237,54 @@ body {
   padding: .8em;
 }
 
-.wrapper .input-group .hidden {
+.container .wrapper .input-group .hidden {
   display: none;
 }
 
-.wrapper .input-group .icon {
+.container .wrapper .input-group .icon {
   position: absolute;
   z-index: 2;
   top: 25%;
   right: 8%;
 }
 
-.wrapper .input-group .error-message {
+.container .wrapper .input-group .error-message {
   font: .8rem 'Mulish', sans-serif;
   text-align: left;
   margin: .75em 0 0 0;
 }
 
-.wrapper .input-group input[type="text"],
-.wrapper .input-group textarea {
+.container .wrapper .input-group input[type="text"],
+.container .wrapper .input-group textarea {
   height: 52px;
   padding: 1em;
   font: 1rem 'Mulish', sans-serif;
 }
 
-.wrapper .input-group input[type="text"].input-error {
+.container .wrapper .input-group input[type="text"].input-error {
   border: 1px solid #DC3545;
 }
 
-.wrapper .input-group input[type="text"].input-error:focus {
+.container .wrapper .input-group input[type="text"].input-error:focus {
   outline: none !important;
   border: 1px solid #DC3545;
 }
 
-.wrapper .input-group textarea {
+.container .wrapper .input-group textarea {
   resize: vertical;
   height: 100px;
 }
 
-.wrapper .input-group textarea.input-error {
+.container .wrapper .input-group textarea.input-error {
   border: 1px solid #DC3545;
 }
 
-.wrapper .input-group textarea.input-error.input-error:focus {
+.container .wrapper .input-group textarea.input-error.input-error:focus {
   outline: none !important;
   border: 1px solid #DC3545;
 }
 
-.wrapper button#submit {
+.container .wrapper button#submit {
   background-image: -webkit-gradient(linear, left top, right top, from(#63B0FF), to(#6D9CFF));
   background-image: linear-gradient(to right, #63B0FF, #6D9CFF);
   width: 100%;
@@ -296,7 +296,7 @@ body {
   border-radius: 8px;
 }
 
-.wrapper button#submit:hover {
+.container .wrapper button#submit:hover {
   background-image: -webkit-gradient(linear, left top, right top, from(#4F7EAB), to(#737DE2));
   background-image: linear-gradient(to right, #4F7EAB, #737DE2);
   cursor: pointer;
