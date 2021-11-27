@@ -51,6 +51,7 @@ class ValidationForm {
             field.classList.remove("input-error");
             this.iconStyles(field, "success");
         } else {
+            field.focus();
             errorMessageField.innerText = message;
             errorMessageField.style.color = "#DC3545"
             field.classList.add("input-error");
